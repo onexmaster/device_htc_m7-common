@@ -32,7 +32,7 @@ LOCAL_PATH := device/htc/m7-common
 
 # Audio
 BOARD_HAVE_HTC_CSDCLIENT := true
-USE_CUSTOM_AUDIO_POLICY := 1
+#USE_CUSTOM_AUDIO_POLICY := 1
 
 # Bluetooth
 BOARD_BLUEDROID_VENDOR_CONF := $(LOCAL_PATH)/bluetooth/libbt_vndcfg.txt
@@ -71,7 +71,7 @@ BOARD_KERNEL_BASE := 0x80600000
 BOARD_KERNEL_CMDLINE := console=none androidboot.hardware=qcom user_debug=31
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01800000
-#TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi- 
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi- 
 TARGET_KERNEL_SOURCE := kernel/htc/msm8960
 
 # Recovery
@@ -106,3 +106,6 @@ WPA_SUPPLICANT_VERSION           := VER_0_8_X
 
 # inherit from the proprietary version
 -include vendor/htc/m7-common/BoardConfigVendor.mk
+
+# include additional build utilities
+-include device/qcom/common/utils.mk
