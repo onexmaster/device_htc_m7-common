@@ -107,3 +107,6 @@ WPA_SUPPLICANT_VERSION           := VER_0_8_X
 
 # inherit from the proprietary version
 -include vendor/htc/m7-common/BoardConfigVendor.mk
+
+#Disable cmsdk
+TARGET_DISABLE_CMSDK := true 
