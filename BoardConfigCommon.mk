@@ -74,6 +74,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01800000
 TARGET_KERNEL_CONFIG := m7_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 TARGET_KERNEL_SOURCE := kernel/htc/msm8960
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Recovery
 BOARD_RECOVERY_BLDRMSG_OFFSET := 2048
