@@ -52,7 +52,10 @@ PRODUCT_PACKAGES += \
 # Gello
 PRODUCT_PACKAGES += \
     Gello
-
+# Doze mode
+PRODUCT_PACKAGES += \
+    HTCDoze
+    
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8960
